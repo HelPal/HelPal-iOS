@@ -12,7 +12,7 @@
         <!--Item-->
         <scene sceneID="0R1-sr-VMi">
             <objects>
-                <navigationController id="Zz5-lY-8vn" sceneMemberID="viewController">
+                <navigationController id="Zz5-lY-8vn" customClass="RecommonNavController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="lHA-qA-YV2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VJ4-1t-Rk2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -49,7 +49,7 @@
         <!--Item-->
         <scene sceneID="I8N-fC-dRE">
             <objects>
-                <navigationController id="lda-xd-txm" sceneMemberID="viewController">
+                <navigationController id="lda-xd-txm" customClass="SettingNavController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="eHb-8f-0za"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1lo-Ei-fej">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -96,7 +96,7 @@
         <!--Item-->
         <scene sceneID="Ztt-7E-aU5">
             <objects>
-                <navigationController id="mK5-CR-JUc" sceneMemberID="viewController">
+                <navigationController id="mK5-CR-JUc" customClass="ChatlistNavController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="ods-j5-sst"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="t8P-UH-O5e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
