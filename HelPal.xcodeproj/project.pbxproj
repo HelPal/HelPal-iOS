@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E7E1F691E3C7EF8009F928F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E1F681E3C7EF8009F928F /* AppDelegate.swift */; };
+		2E7E1F6E1E3C7EF8009F928F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F6C1E3C7EF8009F928F /* Main.storyboard */; };
+		2E7E1F701E3C7EF8009F928F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F6F1E3C7EF8009F928F /* Assets.xcassets */; };
+		2E7E1F731E3C7EF8009F928F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F711E3C7EF8009F928F /* LaunchScreen.storyboard */; };
+		2E7E1F7E1E3C7EF8009F928F /* HelPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E1F7D1E3C7EF8009F928F /* HelPalTests.swift */; };
+		2E7E1F891E3C7EF8009F928F /* HelPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E1F881E3C7EF8009F928F /* HelPalUITests.swift */; };
+		2EC6EAB81E67BB1B00AB2F20 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EAB71E67BB1B00AB2F20 /* MainTabbarViewController.swift */; };
+		2EC6EABA1E67BD4500AB2F20 /* ChatlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EAB91E67BD4500AB2F20 /* ChatlistViewController.swift */; };
+		2EC6EABC1E67BE9700AB2F20 /* RecommoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */; };
+		2EC6EABE1E67BF2200AB2F20 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EABD1E67BF2200AB2F20 /* SettingTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E7E1F7A1E3C7EF8009F928F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E7E1F5D1E3C7EF7009F928F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E7E1F641E3C7EF7009F928F;
+			remoteInfo = HelPal;
+		};
+		2E7E1F851E3C7EF8009F928F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E7E1F5D1E3C7EF7009F928F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E7E1F641E3C7EF7009F928F;
+			remoteInfo = HelPal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E7E1F651E3C7EF7009F928F /* HelPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E7E1F681E3C7EF8009F928F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E7E1F6D1E3C7EF8009F928F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E7E1F6F1E3C7EF8009F928F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E7E1F721E3C7EF8009F928F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E7E1F741E3C7EF8009F928F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E7E1F791E3C7EF8009F928F /* HelPalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelPalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E7E1F7D1E3C7EF8009F928F /* HelPalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelPalTests.swift; sourceTree = "<group>"; };
+		2E7E1F7F1E3C7EF8009F928F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E7E1F841E3C7EF8009F928F /* HelPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E7E1F881E3C7EF8009F928F /* HelPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelPalUITests.swift; sourceTree = "<group>"; };
+		2E7E1F8A1E3C7EF8009F928F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EC6EAB71E67BB1B00AB2F20 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
+		2EC6EAB91E67BD4500AB2F20 /* ChatlistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatlistViewController.swift; sourceTree = "<group>"; };
+		2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommoViewController.swift; sourceTree = "<group>"; };
+		2EC6EABD1E67BF2200AB2F20 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E7E1F621E3C7EF7009F928F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E7E1F761E3C7EF8009F928F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E7E1F811E3C7EF8009F928F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E7E1F5C1E3C7EF7009F928F = {
+			isa = PBXGroup;
+			children = (
+				2E7E1F671E3C7EF7009F928F /* HelPal */,
+				2E7E1F7C1E3C7EF8009F928F /* HelPalTests */,
+				2E7E1F871E3C7EF8009F928F /* HelPalUITests */,
+				2E7E1F661E3C7EF7009F928F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E7E1F661E3C7EF7009F928F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E1F651E3C7EF7009F928F /* HelPal.app */,
+				2E7E1F791E3C7EF8009F928F /* HelPalTests.xctest */,
+				2E7E1F841E3C7EF8009F928F /* HelPalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E7E1F671E3C7EF7009F928F /* HelPal */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E1F681E3C7EF8009F928F /* AppDelegate.swift */,
+				2EC6EAB71E67BB1B00AB2F20 /* MainTabbarViewController.swift */,
+				2EC6EAB91E67BD4500AB2F20 /* ChatlistViewController.swift */,
+				2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */,
+				2EC6EABD1E67BF2200AB2F20 /* SettingTableViewController.swift */,
+				2E7E1F6C1E3C7EF8009F928F /* Main.storyboard */,
+				2E7E1F6F1E3C7EF8009F928F /* Assets.xcassets */,
+				2E7E1F711E3C7EF8009F928F /* LaunchScreen.storyboard */,
+				2E7E1F741E3C7EF8009F928F /* Info.plist */,
+			);
+			path = HelPal;
+			sourceTree = "<group>";
+		};
+		2E7E1F7C1E3C7EF8009F928F /* HelPalTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E1F7D1E3C7EF8009F928F /* HelPalTests.swift */,
+				2E7E1F7F1E3C7EF8009F928F /* Info.plist */,
+			);
+			path = HelPalTests;
+			sourceTree = "<group>";
+		};
+		2E7E1F871E3C7EF8009F928F /* HelPalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E1F881E3C7EF8009F928F /* HelPalUITests.swift */,
+				2E7E1F8A1E3C7EF8009F928F /* Info.plist */,
+			);
+			path = HelPalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E7E1F641E3C7EF7009F928F /* HelPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E7E1F8D1E3C7EF8009F928F /* Build configuration list for PBXNativeTarget "HelPal" */;
+			buildPhases = (
+				2E7E1F611E3C7EF7009F928F /* Sources */,
+				2E7E1F621E3C7EF7009F928F /* Frameworks */,
+				2E7E1F631E3C7EF7009F928F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelPal;
+			productName = HelPal;
+			productReference = 2E7E1F651E3C7EF7009F928F /* HelPal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E7E1F781E3C7EF8009F928F /* HelPalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E7E1F901E3C7EF8009F928F /* Build configuration list for PBXNativeTarget "HelPalTests" */;
+			buildPhases = (
+				2E7E1F751E3C7EF8009F928F /* Sources */,
+				2E7E1F761E3C7EF8009F928F /* Frameworks */,
+				2E7E1F771E3C7EF8009F928F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E7E1F7B1E3C7EF8009F928F /* PBXTargetDependency */,
+			);
+			name = HelPalTests;
+			productName = HelPalTests;
+			productReference = 2E7E1F791E3C7EF8009F928F /* HelPalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2E7E1F831E3C7EF8009F928F /* HelPalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E7E1F931E3C7EF8009F928F /* Build configuration list for PBXNativeTarget "HelPalUITests" */;
+			buildPhases = (
+				2E7E1F801E3C7EF8009F928F /* Sources */,
+				2E7E1F811E3C7EF8009F928F /* Frameworks */,
+				2E7E1F821E3C7EF8009F928F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E7E1F861E3C7EF8009F928F /* PBXTargetDependency */,
+			);
+			name = HelPalUITests;
+			productName = HelPalUITests;
+			productReference = 2E7E1F841E3C7EF8009F928F /* HelPalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E7E1F5D1E3C7EF7009F928F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = CodeAsO;
+				TargetAttributes = {
+					2E7E1F641E3C7EF7009F928F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = B3EP3N28T5;
+						ProvisioningStyle = Automatic;
+					};
+					2E7E1F781E3C7EF8009F928F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RCXRP52256;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E7E1F641E3C7EF7009F928F;
+					};
+					2E7E1F831E3C7EF8009F928F = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = RCXRP52256;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2E7E1F641E3C7EF7009F928F;
+					};
+				};
+			};
+			buildConfigurationList = 2E7E1F601E3C7EF7009F928F /* Build configuration list for PBXProject "HelPal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E7E1F5C1E3C7EF7009F928F;
+			productRefGroup = 2E7E1F661E3C7EF7009F928F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E7E1F641E3C7EF7009F928F /* HelPal */,
+				2E7E1F781E3C7EF8009F928F /* HelPalTests */,
+				2E7E1F831E3C7EF8009F928F /* HelPalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E7E1F631E3C7EF7009F928F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7E1F731E3C7EF8009F928F /* LaunchScreen.storyboard in Resources */,
+				2E7E1F701E3C7EF8009F928F /* Assets.xcassets in Resources */,
+				2E7E1F6E1E3C7EF8009F928F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E7E1F771E3C7EF8009F928F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E7E1F821E3C7EF8009F928F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E7E1F611E3C7EF7009F928F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EC6EABA1E67BD4500AB2F20 /* ChatlistViewController.swift in Sources */,
+				2EC6EAB81E67BB1B00AB2F20 /* MainTabbarViewController.swift in Sources */,
+				2E7E1F691E3C7EF8009F928F /* AppDelegate.swift in Sources */,
+				2EC6EABC1E67BE9700AB2F20 /* RecommoViewController.swift in Sources */,
+				2EC6EABE1E67BF2200AB2F20 /* SettingTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E7E1F751E3C7EF8009F928F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7E1F7E1E3C7EF8009F928F /* HelPalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E7E1F801E3C7EF8009F928F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7E1F891E3C7EF8009F928F /* HelPalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E7E1F7B1E3C7EF8009F928F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E7E1F641E3C7EF7009F928F /* HelPal */;
+			targetProxy = 2E7E1F7A1E3C7EF8009F928F /* PBXContainerItemProxy */;
+		};
+		2E7E1F861E3C7EF8009F928F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E7E1F641E3C7EF7009F928F /* HelPal */;
+			targetProxy = 2E7E1F851E3C7EF8009F928F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E7E1F6C1E3C7EF8009F928F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E7E1F6D1E3C7EF8009F928F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E7E1F711E3C7EF8009F928F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E7E1F721E3C7EF8009F928F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E7E1F8B1E3C7EF8009F928F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E7E1F8C1E3C7EF8009F928F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E7E1F8E1E3C7EF8009F928F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B3EP3N28T5;
+				INFOPLIST_FILE = HelPal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.CodeAsO.HelPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2E7E1F8F1E3C7EF8009F928F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B3EP3N28T5;
+				INFOPLIST_FILE = HelPal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.CodeAsO.HelPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		2E7E1F911E3C7EF8009F928F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RCXRP52256;
+				INFOPLIST_FILE = HelPalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.CodeAsO.HelPalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelPal.app/HelPal";
+			};
+			name = Debug;
+		};
+		2E7E1F921E3C7EF8009F928F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = RCXRP52256;
+				INFOPLIST_FILE = HelPalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.CodeAsO.HelPalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelPal.app/HelPal";
+			};
+			name = Release;
+		};
+		2E7E1F941E3C7EF8009F928F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RCXRP52256;
+				INFOPLIST_FILE = HelPalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.CodeAsO.HelPalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HelPal;
+			};
+			name = Debug;
+		};
+		2E7E1F951E3C7EF8009F928F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = RCXRP52256;
+				INFOPLIST_FILE = HelPalUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.CodeAsO.HelPalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HelPal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E7E1F601E3C7EF7009F928F /* Build configuration list for PBXProject "HelPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E7E1F8B1E3C7EF8009F928F /* Debug */,
+				2E7E1F8C1E3C7EF8009F928F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E7E1F8D1E3C7EF8009F928F /* Build configuration list for PBXNativeTarget "HelPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E7E1F8E1E3C7EF8009F928F /* Debug */,
+				2E7E1F8F1E3C7EF8009F928F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E7E1F901E3C7EF8009F928F /* Build configuration list for PBXNativeTarget "HelPalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E7E1F911E3C7EF8009F928F /* Debug */,
+				2E7E1F921E3C7EF8009F928F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E7E1F931E3C7EF8009F928F /* Build configuration list for PBXNativeTarget "HelPalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E7E1F941E3C7EF8009F928F /* Debug */,
+				2E7E1F951E3C7EF8009F928F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E7E1F5D1E3C7EF7009F928F /* Project object */;
+}
