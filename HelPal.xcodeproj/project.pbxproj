@@ -17,6 +17,7 @@
 		2EC6EABA1E67BD4500AB2F20 /* ChatlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EAB91E67BD4500AB2F20 /* ChatlistViewController.swift */; };
 		2EC6EABC1E67BE9700AB2F20 /* RecommoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */; };
 		2EC6EABE1E67BF2200AB2F20 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EABD1E67BF2200AB2F20 /* SettingTableViewController.swift */; };
+		2EC6EAC01E67C49300AB2F20 /* LognSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EABF1E67C49300AB2F20 /* LognSignViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2EC6EAB91E67BD4500AB2F20 /* ChatlistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatlistViewController.swift; sourceTree = "<group>"; };
 		2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommoViewController.swift; sourceTree = "<group>"; };
 		2EC6EABD1E67BF2200AB2F20 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		2EC6EABF1E67C49300AB2F20 /* LognSignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LognSignViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				2E7E1F681E3C7EF8009F928F /* AppDelegate.swift */,
+				2EC6EABF1E67C49300AB2F20 /* LognSignViewController.swift */,
 				2EC6EAB71E67BB1B00AB2F20 /* MainTabbarViewController.swift */,
 				2EC6EAB91E67BD4500AB2F20 /* ChatlistViewController.swift */,
 				2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */,
@@ -274,6 +277,7 @@
 				2EC6EABA1E67BD4500AB2F20 /* ChatlistViewController.swift in Sources */,
 				2EC6EAB81E67BB1B00AB2F20 /* MainTabbarViewController.swift in Sources */,
 				2E7E1F691E3C7EF8009F928F /* AppDelegate.swift in Sources */,
+				2EC6EAC01E67C49300AB2F20 /* LognSignViewController.swift in Sources */,
 				2EC6EABC1E67BE9700AB2F20 /* RecommoViewController.swift in Sources */,
 				2EC6EABE1E67BF2200AB2F20 /* SettingTableViewController.swift in Sources */,
 			);
@@ -428,7 +432,7 @@
 				DEVELOPMENT_TEAM = B3EP3N28T5;
 				INFOPLIST_FILE = HelPal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.CodeAsO.HelPal;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.RUCInfo.HelPal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -441,7 +445,7 @@
 				DEVELOPMENT_TEAM = B3EP3N28T5;
 				INFOPLIST_FILE = HelPal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.CodeAsO.HelPal;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.RUCInfo.HelPal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
