@@ -19,6 +19,7 @@
 		2EEF0BB21E67DF8600539627 /* ChatlistNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF0BB11E67DF8600539627 /* ChatlistNavController.swift */; };
 		2EEF0BB41E67DFA600539627 /* RecommonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF0BB31E67DFA600539627 /* RecommonNavController.swift */; };
 		2EEF0BB61E67DFBE00539627 /* SettingNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF0BB51E67DFBE00539627 /* SettingNavController.swift */; };
+		2EEF0BBA1E6843BA00539627 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEF0BB91E6843BA00539627 /* OHHTTPStubs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		2EEF0BB11E67DF8600539627 /* ChatlistNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatlistNavController.swift; sourceTree = "<group>"; };
 		2EEF0BB31E67DFA600539627 /* RecommonNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommonNavController.swift; sourceTree = "<group>"; };
 		2EEF0BB51E67DFBE00539627 /* SettingNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingNavController.swift; sourceTree = "<group>"; };
+		2EEF0BB91E6843BA00539627 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EEF0BBA1E6843BA00539627 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +57,7 @@
 			children = (
 				2E7E1F671E3C7EF7009F928F /* HelPal */,
 				2E7E1F661E3C7EF7009F928F /* Products */,
+				2EEF0BB81E6843BA00539627 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +89,14 @@
 			path = HelPal;
 			sourceTree = "<group>";
 		};
+		2EEF0BB81E6843BA00539627 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EEF0BB91E6843BA00539627 /* OHHTTPStubs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,6 +107,7 @@
 				2E7E1F611E3C7EF7009F928F /* Sources */,
 				2E7E1F621E3C7EF7009F928F /* Frameworks */,
 				2E7E1F631E3C7EF7009F928F /* Resources */,
+				2EEF0BBB1E684CFC00539627 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -152,6 +165,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EEF0BBB1E684CFC00539627 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E7E1F611E3C7EF7009F928F /* Sources */ = {
@@ -288,6 +319,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B3EP3N28T5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HelPal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.RUCInfo.HelPal;
@@ -301,6 +336,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B3EP3N28T5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = HelPal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.RUCInfo.HelPal;
