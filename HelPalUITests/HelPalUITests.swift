@@ -2,8 +2,8 @@
 //  HelPalUITests.swift
 //  HelPalUITests
 //
-//  Created by zhongdian on 2017/1/28.
-//  Copyright © 2017年 CodeAsO. All rights reserved.
+//  Created by Dian Zhong on 2017/3/1.
+//  Copyright © 2017年 Infomation School of Renmin University. All rights reserved.
 //
 
 import XCTest
