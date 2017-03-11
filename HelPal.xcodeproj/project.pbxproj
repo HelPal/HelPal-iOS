@@ -195,6 +195,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
