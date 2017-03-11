@@ -190,7 +190,7 @@
         <!--Logn Sign View Controller-->
         <scene sceneID="0zh-9v-Maa">
             <objects>
-                <viewController storyboardIdentifier="lognSignVC" id="d5i-CN-8ek" customClass="LognSignViewController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d5i-CN-8ek" customClass="LognSignViewController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VdR-Fo-ACn"/>
                         <viewControllerLayoutGuide type="bottom" id="2br-lW-DSw"/>
@@ -206,10 +206,27 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="oQ2-iH-Qkd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IuI-Ev-A6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3385" y="-304"/>
+            <point key="canvasLocation" x="3977" y="-262"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="esQ-oA-qTA">
+            <objects>
+                <navigationController storyboardIdentifier="lognSignNav" id="mXR-KI-xRN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wm5-c4-lQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="d5i-CN-8ek" kind="relationship" relationship="rootViewController" id="bV0-bw-s8I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HSP-fb-hMx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3242" y="-262"/>
         </scene>
         <!--Main Tabbar View Controller-->
         <scene sceneID="9vn-q3-XRm">
