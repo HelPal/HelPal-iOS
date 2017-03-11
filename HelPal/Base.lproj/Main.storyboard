@@ -202,7 +202,9 @@
         <scene sceneID="Ztt-7E-aU5">
             <objects>
                 <navigationController id="mK5-CR-JUc" customClass="ChatlistNavController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" id="ods-j5-sst"/>
+                    <tabBarItem key="tabBarItem" id="ods-j5-sst">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="t8P-UH-O5e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

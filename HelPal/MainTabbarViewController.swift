@@ -16,6 +16,9 @@ class MainTabbarViewController: UITabBarController{
         self.tabBar.items![0].title = "ChatlistTabTitle".localized;
         self.tabBar.items![1].title = "RecommonTabTitle".localized;
         self.tabBar.items![2].title = "SettingTabTitle".localized;
+        self.tabBar.items![0].image = UIImage(named: "Tab_People");
+        self.tabBar.items![1].image = UIImage(named: "Tab_Discover");
+        self.tabBar.items![2].image = UIImage(named: "Tab_Setting");
     }
     
     override func didReceiveMemoryWarning() {
