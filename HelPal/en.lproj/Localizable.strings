@@ -13,6 +13,8 @@
 "ChatlistNavTitle" = "Chats";
 "SettingNavTitle" = "Settings";
 
+"EmptyChatlistMessage_NotLoggin" = "Tap to log in and start your tour!";
+"EmptyChatlistMessage_NoMessage" = "No messages for you, go to explore!";
 
 "RecommonSegementedTitle1" = "Map";
 "RecommonSegementedTitle2" = "List";

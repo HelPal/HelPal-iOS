@@ -12,7 +12,13 @@ import UIKit
 //When the user is logged in, this VC shows a chatlist
 class ChatlistViewController: UIViewController
 {
+    @IBOutlet weak var emptyContainer: UIView!
+    @IBOutlet weak var ListContainer: UIView!
     override func viewDidLoad() {
         self.title = "ChatlistNavTitle".localized;
+        
+        //TODO: Load measages
+        //if messgaes.count = 0
+        ListContainer.isHidden = true;
     }
 }

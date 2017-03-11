@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -149,19 +150,47 @@
                     <view key="view" contentMode="scaleToFill" id="IOs-9x-0Nc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJi-N9-vzS" userLabel="EmptyContainer">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <connections>
+                                    <segue destination="BK8-iK-Qqh" kind="embed" id="459-gV-Dkc"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yj9-JD-Y3h" userLabel="ListContainer">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <connections>
+                                    <segue destination="x2w-Ld-YkK" kind="embed" id="Ie9-Zr-zbi"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yj9-JD-Y3h" secondAttribute="trailing" id="19M-rq-Yx5"/>
+                            <constraint firstItem="DJi-N9-vzS" firstAttribute="top" secondItem="fyz-7D-zbB" secondAttribute="bottom" id="4Ma-Qe-ydz"/>
+                            <constraint firstItem="Yus-rh-9DG" firstAttribute="top" secondItem="yj9-JD-Y3h" secondAttribute="bottom" id="TzD-j4-gpN"/>
+                            <constraint firstAttribute="trailing" secondItem="DJi-N9-vzS" secondAttribute="trailing" id="ZwJ-3j-6ks"/>
+                            <constraint firstItem="Yus-rh-9DG" firstAttribute="top" secondItem="DJi-N9-vzS" secondAttribute="bottom" id="cj2-0T-syZ"/>
+                            <constraint firstItem="yj9-JD-Y3h" firstAttribute="leading" secondItem="IOs-9x-0Nc" secondAttribute="leading" id="u1L-xa-bk0"/>
+                            <constraint firstItem="yj9-JD-Y3h" firstAttribute="top" secondItem="fyz-7D-zbB" secondAttribute="bottom" id="ugU-Ze-16N"/>
+                            <constraint firstItem="DJi-N9-vzS" firstAttribute="leading" secondItem="IOs-9x-0Nc" secondAttribute="leading" id="w11-fd-cjN"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="nDB-cP-o0W"/>
                     <navigationItem key="navigationItem" id="KDq-9y-NLg"/>
+                    <connections>
+                        <outlet property="ListContainer" destination="yj9-JD-Y3h" id="bCk-0S-q23"/>
+                        <outlet property="emptyContainer" destination="DJi-N9-vzS" id="heR-VW-eMJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NRl-8N-VXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1442" y="-902"/>
+            <point key="canvasLocation" x="1440.8" y="-902.69865067466276"/>
         </scene>
         <!--Logn Sign View Controller-->
         <scene sceneID="0zh-9v-Maa">
             <objects>
-                <viewController id="d5i-CN-8ek" customClass="LognSignViewController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="lognSignVC" id="d5i-CN-8ek" customClass="LognSignViewController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VdR-Fo-ACn"/>
                         <viewControllerLayoutGuide type="bottom" id="2br-lW-DSw"/>
@@ -180,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IuI-Ev-A6h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2950" y="-248"/>
+            <point key="canvasLocation" x="3385" y="-304"/>
         </scene>
         <!--Main Tabbar View Controller-->
         <scene sceneID="9vn-q3-XRm">
@@ -229,8 +258,66 @@
             </objects>
             <point key="canvasLocation" x="2255" y="6"/>
         </scene>
+        <!--Empty Chatlist Contained Controller-->
+        <scene sceneID="Q62-MY-SHT">
+            <objects>
+                <viewController id="BK8-iK-Qqh" customClass="EmptyChatlistContainedController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vMh-Uo-JYf" userLabel="EmptyView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoChats" translatesAutoresizingMaskIntoConstraints="NO" id="QID-P4-gfB">
+                                <rect key="frame" x="102" y="120" width="170.5" height="109.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109.5" id="InW-4I-ulL"/>
+                                    <constraint firstAttribute="width" constant="170.5" id="c3W-7X-h46"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No messages for you, go to explore!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhc-EL-O05">
+                                <rect key="frame" x="16" y="264.5" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ZM9-ZP-s5e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fhc-EL-O05" firstAttribute="trailing" secondItem="vMh-Uo-JYf" secondAttribute="trailingMargin" id="1RC-l4-rjh"/>
+                            <constraint firstItem="fhc-EL-O05" firstAttribute="top" secondItem="QID-P4-gfB" secondAttribute="bottom" constant="35" id="AAN-Yg-AAO"/>
+                            <constraint firstItem="QID-P4-gfB" firstAttribute="centerX" secondItem="vMh-Uo-JYf" secondAttribute="centerX" id="Vii-Zk-NQ3"/>
+                            <constraint firstItem="fhc-EL-O05" firstAttribute="leading" secondItem="vMh-Uo-JYf" secondAttribute="leadingMargin" id="gCv-GH-i8u"/>
+                            <constraint firstItem="QID-P4-gfB" firstAttribute="top" secondItem="vMh-Uo-JYf" secondAttribute="topMargin" constant="120" id="hmv-32-pJY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image404" destination="QID-P4-gfB" id="LBs-2F-cQr"/>
+                        <outlet property="message" destination="fhc-EL-O05" id="jHg-zw-pUo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k09-1D-nZi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2253.5999999999999" y="-1606.5967016491754"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jRH-LW-ZHS">
+            <objects>
+                <viewController id="x2w-Ld-YkK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gab-fw-JEm" userLabel="ListView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTZ-vz-d1M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2254" y="-1070"/>
+        </scene>
     </scenes>
     <resources>
         <image name="LoginLogo" width="429" height="212"/>
+        <image name="NoChats" width="513" height="329"/>
     </resources>
 </document>
