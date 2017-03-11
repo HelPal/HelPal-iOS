@@ -11,6 +11,8 @@
 		2E7E1F6E1E3C7EF8009F928F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F6C1E3C7EF8009F928F /* Main.storyboard */; };
 		2E7E1F701E3C7EF8009F928F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F6F1E3C7EF8009F928F /* Assets.xcassets */; };
 		2E7E1F731E3C7EF8009F928F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F711E3C7EF8009F928F /* LaunchScreen.storyboard */; };
+		2E990F2E1E73FA9D001F4769 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E990F301E73FA9D001F4769 /* Localizable.strings */; };
+		2E990F351E73FAF9001F4769 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E990F341E73FAF9001F4769 /* String.swift */; };
 		2EC6EAB81E67BB1B00AB2F20 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EAB71E67BB1B00AB2F20 /* MainTabbarViewController.swift */; };
 		2EC6EABA1E67BD4500AB2F20 /* ChatlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EAB91E67BD4500AB2F20 /* ChatlistViewController.swift */; };
 		2EC6EABC1E67BE9700AB2F20 /* RecommoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */; };
@@ -29,6 +31,11 @@
 		2E7E1F6F1E3C7EF8009F928F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E7E1F721E3C7EF8009F928F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E7E1F741E3C7EF8009F928F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E990F2A1E73FA6F001F4769 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		2E990F2B1E73FA6F001F4769 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2E990F311E73FAA2001F4769 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E990F321E73FAA3001F4769 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2E990F341E73FAF9001F4769 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = Extensions/String.swift; sourceTree = "<group>"; };
 		2EC6EAB71E67BB1B00AB2F20 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		2EC6EAB91E67BD4500AB2F20 /* ChatlistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatlistViewController.swift; sourceTree = "<group>"; };
 		2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommoViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +79,7 @@
 		2E7E1F671E3C7EF7009F928F /* HelPal */ = {
 			isa = PBXGroup;
 			children = (
+				2E990F331E73FAC7001F4769 /* Extensions */,
 				2E7E1F681E3C7EF8009F928F /* AppDelegate.swift */,
 				2EC6EABF1E67C49300AB2F20 /* LognSignViewController.swift */,
 				2EC6EAB71E67BB1B00AB2F20 /* MainTabbarViewController.swift */,
@@ -81,12 +89,21 @@
 				2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */,
 				2EEF0BB51E67DFBE00539627 /* SettingNavController.swift */,
 				2EC6EABD1E67BF2200AB2F20 /* SettingTableViewController.swift */,
+				2E990F301E73FA9D001F4769 /* Localizable.strings */,
 				2E7E1F6C1E3C7EF8009F928F /* Main.storyboard */,
-				2E7E1F6F1E3C7EF8009F928F /* Assets.xcassets */,
 				2E7E1F711E3C7EF8009F928F /* LaunchScreen.storyboard */,
+				2E7E1F6F1E3C7EF8009F928F /* Assets.xcassets */,
 				2E7E1F741E3C7EF8009F928F /* Info.plist */,
 			);
 			path = HelPal;
+			sourceTree = "<group>";
+		};
+		2E990F331E73FAC7001F4769 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E990F341E73FAF9001F4769 /* String.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		2EEF0BB81E6843BA00539627 /* Frameworks */ = {
@@ -142,6 +159,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 2E7E1F5C1E3C7EF7009F928F;
 			productRefGroup = 2E7E1F661E3C7EF7009F928F /* Products */;
@@ -159,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E7E1F731E3C7EF8009F928F /* LaunchScreen.storyboard in Resources */,
+				2E990F2E1E73FA9D001F4769 /* Localizable.strings in Resources */,
 				2E7E1F701E3C7EF8009F928F /* Assets.xcassets in Resources */,
 				2E7E1F6E1E3C7EF8009F928F /* Main.storyboard in Resources */,
 			);
@@ -191,6 +210,7 @@
 			files = (
 				2EEF0BB61E67DFBE00539627 /* SettingNavController.swift in Sources */,
 				2EC6EABA1E67BD4500AB2F20 /* ChatlistViewController.swift in Sources */,
+				2E990F351E73FAF9001F4769 /* String.swift in Sources */,
 				2EC6EAB81E67BB1B00AB2F20 /* MainTabbarViewController.swift in Sources */,
 				2E7E1F691E3C7EF8009F928F /* AppDelegate.swift in Sources */,
 				2EC6EAC01E67C49300AB2F20 /* LognSignViewController.swift in Sources */,
@@ -208,6 +228,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2E7E1F6D1E3C7EF8009F928F /* Base */,
+				2E990F2A1E73FA6F001F4769 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -216,8 +237,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				2E7E1F721E3C7EF8009F928F /* Base */,
+				2E990F2B1E73FA6F001F4769 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2E990F301E73FA9D001F4769 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E990F311E73FAA2001F4769 /* en */,
+				2E990F321E73FAA3001F4769 /* zh-Hans */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -227,6 +258,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -277,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";

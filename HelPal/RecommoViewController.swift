@@ -13,7 +13,7 @@ import UIKit
 //Mapbox will do the help
 class RecommonViewController: UIViewController{
     override func viewDidLoad() {
-        let segment: UISegmentedControl = UISegmentedControl(items: ["First", "Second"])
+        let segment: UISegmentedControl = UISegmentedControl(items: ["RecommonSegementedTitle1".localized, "RecommonSegementedTitle2".localized])
         segment.sizeToFit()
         segment.tintColor = UIColor(red:0.99, green:0.00, blue:0.25, alpha:1.00)
         segment.selectedSegmentIndex = 0;
