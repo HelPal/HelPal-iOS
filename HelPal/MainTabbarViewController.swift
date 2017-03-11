@@ -13,7 +13,9 @@ class MainTabbarViewController: UITabBarController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tabBar.items![0].title = "ChatlistTabTitle".localized;
+        self.tabBar.items![1].title = "RecommonTabTitle".localized;
+        self.tabBar.items![2].title = "SettingTabTitle".localized;
     }
     
     override func didReceiveMemoryWarning() {

@@ -14,7 +14,7 @@
         <scene sceneID="0R1-sr-VMi">
             <objects>
                 <navigationController id="Zz5-lY-8vn" customClass="RecommonNavController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="lHA-qA-YV2"/>
+                    <tabBarItem key="tabBarItem" id="lHA-qA-YV2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VJ4-1t-Rk2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -79,7 +79,7 @@
         <scene sceneID="I8N-fC-dRE">
             <objects>
                 <navigationController id="lda-xd-txm" customClass="SettingNavController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="eHb-8f-0za"/>
+                    <tabBarItem key="tabBarItem" id="eHb-8f-0za"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1lo-Ei-fej">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -126,7 +126,7 @@
         <scene sceneID="Ztt-7E-aU5">
             <objects>
                 <navigationController id="mK5-CR-JUc" customClass="ChatlistNavController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="ods-j5-sst"/>
+                    <tabBarItem key="tabBarItem" id="ods-j5-sst"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="t8P-UH-O5e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
