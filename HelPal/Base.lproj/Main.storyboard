@@ -250,12 +250,15 @@
         <!--Map-->
         <scene sceneID="b7S-Ni-xrm">
             <objects>
-                <viewController id="JlF-om-LZL" userLabel="Map" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SLc-5S-hHU">
+                <viewController id="JlF-om-LZL" userLabel="Map" customClass="MapViewController" customModule="HelPal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SLc-5S-hHU" customClass="MGLMapView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="SLc-5S-hHU" id="UvO-VQ-WrP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BG7-mI-DLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

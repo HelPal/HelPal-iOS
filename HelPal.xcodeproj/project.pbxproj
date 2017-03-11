@@ -14,6 +14,8 @@
 		2E990F2E1E73FA9D001F4769 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E990F301E73FA9D001F4769 /* Localizable.strings */; };
 		2E990F351E73FAF9001F4769 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E990F341E73FAF9001F4769 /* String.swift */; };
 		2E990F381E740D08001F4769 /* EmptyChatlistContainedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E990F371E740D08001F4769 /* EmptyChatlistContainedController.swift */; };
+		2E990F3A1E742545001F4769 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E990F391E742545001F4769 /* MapViewController.swift */; };
+		2E990F3C1E74256B001F4769 /* RecommonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E990F3B1E74256B001F4769 /* RecommonListViewController.swift */; };
 		2EC6EAB81E67BB1B00AB2F20 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EAB71E67BB1B00AB2F20 /* MainTabbarViewController.swift */; };
 		2EC6EABA1E67BD4500AB2F20 /* ChatlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EAB91E67BD4500AB2F20 /* ChatlistViewController.swift */; };
 		2EC6EABC1E67BE9700AB2F20 /* RecommoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */; };
@@ -37,6 +39,8 @@
 		2E990F321E73FAA3001F4769 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		2E990F341E73FAF9001F4769 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String.swift; path = Extensions/String.swift; sourceTree = "<group>"; };
 		2E990F371E740D08001F4769 /* EmptyChatlistContainedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyChatlistContainedController.swift; sourceTree = "<group>"; };
+		2E990F391E742545001F4769 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		2E990F3B1E74256B001F4769 /* RecommonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommonListViewController.swift; sourceTree = "<group>"; };
 		2EC6EAB71E67BB1B00AB2F20 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		2EC6EAB91E67BD4500AB2F20 /* ChatlistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatlistViewController.swift; sourceTree = "<group>"; };
 		2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommoViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				2E990F371E740D08001F4769 /* EmptyChatlistContainedController.swift */,
 				2EEF0BB31E67DFA600539627 /* RecommonNavController.swift */,
 				2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */,
+				2E990F391E742545001F4769 /* MapViewController.swift */,
+				2E990F3B1E74256B001F4769 /* RecommonListViewController.swift */,
 				2EEF0BB51E67DFBE00539627 /* SettingNavController.swift */,
 				2EC6EABD1E67BF2200AB2F20 /* SettingTableViewController.swift */,
 				2E990F301E73FA9D001F4769 /* Localizable.strings */,
@@ -218,7 +224,9 @@
 				2EC6EAB81E67BB1B00AB2F20 /* MainTabbarViewController.swift in Sources */,
 				2E7E1F691E3C7EF8009F928F /* AppDelegate.swift in Sources */,
 				2EC6EAC01E67C49300AB2F20 /* LognSignViewController.swift in Sources */,
+				2E990F3A1E742545001F4769 /* MapViewController.swift in Sources */,
 				2EEF0BB21E67DF8600539627 /* ChatlistNavController.swift in Sources */,
+				2E990F3C1E74256B001F4769 /* RecommonListViewController.swift in Sources */,
 				2EC6EABC1E67BE9700AB2F20 /* RecommoViewController.swift in Sources */,
 				2EC6EABE1E67BF2200AB2F20 /* SettingTableViewController.swift in Sources */,
 				2EEF0BB41E67DFA600539627 /* RecommonNavController.swift in Sources */,
