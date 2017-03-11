@@ -12,5 +12,10 @@ class SettingTableViewController: UITableViewController{
     
     override func viewDidLoad() {
         self.title = "SettingNavTitle".localized;
+        self.tableView.delegate = self;
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true);
     }
 }

@@ -25,7 +25,7 @@ class EmptyChatlistContainedController: UIViewController {
         //if not
         message.text = "EmptyChatlistMessage_NotLoggin".localized;
         
-        //A UIGestureRecognizer is to be used with a single view. I agree the documentation is spotty. That UIGestureRecognizer has a single view property gives it away.
+        //A UIGestureRecognizer is to be used with a single view. That UIGestureRecognizer has a single view property gives it away.
         tapper1 = UITapGestureRecognizer(target: self, action: #selector(pushUpLoginView));
         tapper2 = UITapGestureRecognizer(target: self, action: #selector(pushUpLoginView));
         if isLoggedIn == false {
