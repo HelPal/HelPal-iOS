@@ -9,5 +9,7 @@
 import UIKit
 
 class ChatlistNavController: UINavigationController {
-    
+    override func viewDidLoad() {
+        self.title = "ChatlistTabTitle".localized;
+    }
 }

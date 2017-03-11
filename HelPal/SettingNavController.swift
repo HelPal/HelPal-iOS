@@ -9,5 +9,7 @@
 import UIKit
 
 class SettingNavController: UINavigationController {
-    
+    override func viewDidLoad() {
+        self.title = "SettingTabTitle".localized;
+    }
 }

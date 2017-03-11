@@ -9,5 +9,7 @@
 import UIKit
 
 class RecommonNavController: UINavigationController {
-    
+    override func viewDidLoad() {
+        self.title = "RecommonTabTitle".localized;
+    }
 }
