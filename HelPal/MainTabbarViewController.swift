@@ -13,6 +13,7 @@ class MainTabbarViewController: UITabBarController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func didReceiveMemoryWarning() {
