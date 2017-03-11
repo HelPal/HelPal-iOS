@@ -6,5 +6,13 @@
   Copyright © 2017 CodeAsO. All rights reserved.
 */
 
+"ChatlistTabTitle" = "Chats";
+"RecommonTabTitle" = "Discover";
+"SettingTabTitle" = "Settings";
+
+"ChatlistNavTitle" = "Chats";
+"SettingNavTitle" = "Settings";
+
+
 "RecommonSegementedTitle1" = "Map";
 "RecommonSegementedTitle2" = "List";

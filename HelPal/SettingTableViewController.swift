@@ -10,4 +10,7 @@ import UIKit
 
 class SettingTableViewController: UITableViewController{
     
+    override func viewDidLoad() {
+        self.title = "SettingNavTitle".localized;
+    }
 }

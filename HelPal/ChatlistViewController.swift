@@ -12,5 +12,7 @@ import UIKit
 //When the user is logged in, this VC shows a chatlist
 class ChatlistViewController: UIViewController
 {
-    
+    override func viewDidLoad() {
+        self.title = "ChatlistNavTitle".localized;
+    }
 }
