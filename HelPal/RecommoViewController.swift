@@ -12,5 +12,11 @@ import UIKit
 //There will be a segmented control on the navi bar, to switch map mode and the list mode
 //Mapbox will do the help
 class RecommonViewController: UIViewController{
-    
+    override func viewDidLoad() {
+        let segment: UISegmentedControl = UISegmentedControl(items: ["First", "Second"])
+        segment.sizeToFit()
+        segment.tintColor = UIColor(red:0.99, green:0.00, blue:0.25, alpha:1.00)
+        segment.selectedSegmentIndex = 0;
+        self.navigationItem.titleView = segment
+    }
 }
