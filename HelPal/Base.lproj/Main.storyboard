@@ -292,7 +292,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginLogo" translatesAutoresizingMaskIntoConstraints="NO" id="foh-dk-mOm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginLogo" translatesAutoresizingMaskIntoConstraints="NO" id="foh-dk-mOm" customClass="SpringImageView" customModule="HelPal" customModuleProvider="target">
                                 <rect key="frame" x="101" y="144" width="172" height="92"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="172" id="pPY-vc-VYu"/>
@@ -362,7 +362,7 @@
                                     <constraint firstItem="Wn9-Nc-yEf" firstAttribute="leading" secondItem="DYg-7L-J1W" secondAttribute="leading" constant="12" id="rgo-zN-UfJ"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bx7-Bu-CMA">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bx7-Bu-CMA" customClass="SpringView" customModule="HelPal" customModuleProvider="target">
                                 <rect key="frame" x="66" y="402" width="243" height="46"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVi-k0-fHL">
@@ -390,11 +390,6 @@
                                     <action selector="tapSwitch:" destination="d5i-CN-8ek" eventType="touchUpInside" id="6T7-lp-Tad"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kq3-hI-3gZ">
-                                <rect key="frame" x="101" y="144" width="172" height="92"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>

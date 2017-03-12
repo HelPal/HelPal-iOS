@@ -17,7 +17,7 @@ class LognSignViewController: UIViewController {
     
     @IBOutlet weak var usernameView: UIView!
     @IBOutlet weak var passwordView: UIView!
-    @IBOutlet weak var btnView: UIView!
+    @IBOutlet weak var btnView: SpringView!
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
@@ -36,7 +36,9 @@ class LognSignViewController: UIViewController {
         initInputView(view: btnView);
         btnView.backgroundColor = UIColor(red: 82, green: 190, blue: 248);
         btnView.layer.borderColor = UIColor.clear.cgColor;
-        
+        btnView.isUserInteractionEnabled = true;
+        btnView.animation = "slideRight";
+        btnView.animate();
     }
     
     @IBAction func tapSwitch(_ sender: Any) {
@@ -44,10 +46,10 @@ class LognSignViewController: UIViewController {
     
     func initInputView(view: UIView){
         view.layer.borderWidth = 1.0;
-        view.layer.borderColor = UIColor(hex: 0xdddddd).cgColor;
+        view.layer.borderColor = UIColor(pureHex: 0xdddddd).cgColor;
         view.layer.cornerRadius = 4.0;
         view.layer.masksToBounds = true;
-        view.backgroundColor = UIColor(hex: 0xffffff);
+        view.backgroundColor = UIColor(pureHex: 0xffffff);
     }
 
     //TODO: test whether this is avaiable when next VC traggles this.
