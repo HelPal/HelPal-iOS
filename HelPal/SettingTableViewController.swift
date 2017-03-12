@@ -20,7 +20,7 @@ class SettingTableViewController: UITableViewController{
         self.tableView.delegate = self;
         
         //Do not add any handler to this shared cancelAction
-        let cancelAction = UIAlertAction(title: "Cancel".localized, style: .cancel, handler:nil);
+        
         
         //Setting account sheet
         accountSheet = UIAlertController(title: "SureLogout".localized, message: nil, preferredStyle: .actionSheet);
@@ -28,8 +28,9 @@ class SettingTableViewController: UITableViewController{
             (alert: UIAlertAction!) -> Void in
             self.logout();
         });
+        let cancelActionForAccount = UIAlertAction(title: "Cancel".localized, style: .cancel, handler:nil);
         accountSheet.addAction(logoutAction);
-        accountSheet.addAction(cancelAction);
+        accountSheet.addAction(cancelActionForAccount);
         
         //Setting gender sheet
         genderSheet = UIAlertController(title: "ChooseYourGender".localized, message: nil, preferredStyle: .actionSheet);
@@ -41,9 +42,10 @@ class SettingTableViewController: UITableViewController{
             (alert: UIAlertAction!) -> Void in
             self.setGender(type: "female");
         });
+        let cancelActionForGender = UIAlertAction(title: "Cancel".localized, style: .cancel, handler:nil);
         genderSheet.addAction(maleAction);
         genderSheet.addAction(femaleAction);
-        genderSheet.addAction(cancelAction);
+        genderSheet.addAction(cancelActionForGender);
         
     }
     
