@@ -41,7 +41,7 @@ class SettingTableViewController: UITableViewController{
             case 0:
                 self.present(genderSheet, animated:true, completion:nil);
             default:
-                print("click somewhere not paid attention");
+                log.warning("Tap on a table row without response!");
             }
         }
         tableView.deselectRow(at: indexPath, animated: true);
