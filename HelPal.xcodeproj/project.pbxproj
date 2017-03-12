@@ -16,6 +16,8 @@
 		2E990F381E740D08001F4769 /* EmptyChatlistContainedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E990F371E740D08001F4769 /* EmptyChatlistContainedController.swift */; };
 		2E990F3A1E742545001F4769 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E990F391E742545001F4769 /* MapViewController.swift */; };
 		2E990F3C1E74256B001F4769 /* RecommonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E990F3B1E74256B001F4769 /* RecommonListViewController.swift */; };
+		2EA386101E75047E006AC16F /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA3860F1E75047E006AC16F /* UIColor.swift */; };
+		2EA386131E75091F006AC16F /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EA386121E75091F006AC16F /* Ionicons.ttf */; };
 		2EC6EAB81E67BB1B00AB2F20 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EAB71E67BB1B00AB2F20 /* MainTabbarViewController.swift */; };
 		2EC6EABA1E67BD4500AB2F20 /* ChatlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EAB91E67BD4500AB2F20 /* ChatlistViewController.swift */; };
 		2EC6EABC1E67BE9700AB2F20 /* RecommoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */; };
@@ -41,6 +43,8 @@
 		2E990F371E740D08001F4769 /* EmptyChatlistContainedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyChatlistContainedController.swift; sourceTree = "<group>"; };
 		2E990F391E742545001F4769 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2E990F3B1E74256B001F4769 /* RecommonListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommonListViewController.swift; sourceTree = "<group>"; };
+		2EA3860F1E75047E006AC16F /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColor.swift; path = Extensions/UIColor.swift; sourceTree = "<group>"; };
+		2EA386121E75091F006AC16F /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
 		2EC6EAB71E67BB1B00AB2F20 /* MainTabbarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabbarViewController.swift; sourceTree = "<group>"; };
 		2EC6EAB91E67BD4500AB2F20 /* ChatlistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatlistViewController.swift; sourceTree = "<group>"; };
 		2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommoViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 		2E7E1F671E3C7EF7009F928F /* HelPal */ = {
 			isa = PBXGroup;
 			children = (
+				2EA386111E75089B006AC16F /* Resources */,
 				2E990F331E73FAC7001F4769 /* Extensions */,
 				2E7E1F681E3C7EF8009F928F /* AppDelegate.swift */,
 				2EC6EABF1E67C49300AB2F20 /* LognSignViewController.swift */,
@@ -110,8 +115,17 @@
 			isa = PBXGroup;
 			children = (
 				2E990F341E73FAF9001F4769 /* String.swift */,
+				2EA3860F1E75047E006AC16F /* UIColor.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		2EA386111E75089B006AC16F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EA386121E75091F006AC16F /* Ionicons.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		2EEF0BB81E6843BA00539627 /* Frameworks */ = {
@@ -184,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EA386131E75091F006AC16F /* Ionicons.ttf in Resources */,
 				2E7E1F731E3C7EF8009F928F /* LaunchScreen.storyboard in Resources */,
 				2E990F2E1E73FA9D001F4769 /* Localizable.strings in Resources */,
 				2E7E1F701E3C7EF8009F928F /* Assets.xcassets in Resources */,
@@ -203,6 +218,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Spring.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -219,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E990F381E740D08001F4769 /* EmptyChatlistContainedController.swift in Sources */,
+				2EA386101E75047E006AC16F /* UIColor.swift in Sources */,
 				2EEF0BB61E67DFBE00539627 /* SettingNavController.swift in Sources */,
 				2EC6EABA1E67BD4500AB2F20 /* ChatlistViewController.swift in Sources */,
 				2E990F351E73FAF9001F4769 /* String.swift in Sources */,
