@@ -2,7 +2,18 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Setting.pdf"
+      "filename" : "grid-two-up-2x.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "grid-two-up-4x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "grid-two-up-6x.png",
+      "scale" : "3x"
     }
   ],
   "info" : {
