@@ -13,9 +13,23 @@ class SettingTableViewController: UITableViewController{
     @IBOutlet weak var genderLabel: UILabel!
     
     var genderSheet: UIAlertController!;
+    var accountSheet: UIAlertController!;
+    
     override func viewDidLoad() {
         self.title = "SettingNavTitle".localized;
         self.tableView.delegate = self;
+        
+        //Do not add any handler to this shared cancelAction
+        let cancelAction = UIAlertAction(title: "Cancel".localized, style: .cancel, handler:nil);
+        
+        //Setting account sheet
+        accountSheet = UIAlertController(title: "SureLogout".localized, message: nil, preferredStyle: .actionSheet);
+        let logoutAction = UIAlertAction(title: "Logout".localized, style: .destructive, handler: {
+            (alert: UIAlertAction!) -> Void in
+            self.logout();
+        });
+        accountSheet.addAction(logoutAction);
+        accountSheet.addAction(cancelAction);
         
         //Setting gender sheet
         genderSheet = UIAlertController(title: "ChooseYourGender".localized, message: nil, preferredStyle: .actionSheet);
@@ -27,15 +41,20 @@ class SettingTableViewController: UITableViewController{
             (alert: UIAlertAction!) -> Void in
             self.setGender(type: "female");
         });
-        let cancelAction = UIAlertAction(title: "Cancel".localized, style: .cancel, handler:nil);
         genderSheet.addAction(maleAction);
         genderSheet.addAction(femaleAction);
         genderSheet.addAction(cancelAction);
+        
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0 {
-            
+            switch indexPath.row {
+            case 0:
+                self.present(accountSheet, animated: true, completion: nil);
+            default:
+                log.warning("Tap on a table row doesn't exist!");
+            }
         } else {
             switch indexPath.row {
             case 0:
@@ -49,10 +68,16 @@ class SettingTableViewController: UITableViewController{
     
     func setGender(type: String!){
         //TODO:
+        log.info("set gender request not implemented");
         if type == "male" {
             genderLabel.text = "Male".localized;
         } else if type == "female" {
             genderLabel.text = "Female".localized;
         }
+    }
+    
+    func logout(){
+        //TODO:
+        log.info("log out request not implemented");
     }
 }

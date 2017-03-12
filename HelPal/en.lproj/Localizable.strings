@@ -9,6 +9,9 @@
 "Male" = "Male";
 "Female" = "Female";
 
+"Login" = "Log in";
+"Signup" = "Sign up";
+"Logout" = "Log out";
 "Cancel" = "Cancel";
 
 "ChatlistTabTitle" = "Chats";
@@ -24,4 +27,5 @@
 "RecommonSegementedTitle1" = "Map";
 "RecommonSegementedTitle2" = "List";
 
+"SureLogout" = "Are you sure to log out?";
 "ChooseYourGender" = "Choose your gender";
