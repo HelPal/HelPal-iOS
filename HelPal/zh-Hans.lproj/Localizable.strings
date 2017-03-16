@@ -5,3 +5,27 @@
   Created by Dian Zhong on 11/03/2017.
   Copyright © 2017 CodeAsO. All rights reserved.
 */
+
+"Male" = "男";
+"Female" = "女";
+
+"Login" = "登录";
+"Signup" = "注册";
+"Logout" = "注销";
+"Cancel" = "取消";
+
+"ChatlistTabTitle" = "会话";
+"RecommonTabTitle" = "探索";
+"SettingTabTitle" = "设置";
+
+"ChatlistNavTitle" = "会话";
+"SettingNavTitle" = "设置";
+
+"EmptyChatlistMessage_NotLoggin" = "轻点以登录或创建账号";
+"EmptyChatlistMessage_NoMessage" = "还没有消息，去探索吧";
+
+"RecommonSegementedTitle1" = "地图";
+"RecommonSegementedTitle2" = "列表";
+
+"SureLogout" = "您确定要注销吗？";
+"ChooseYourGender" = "选择您的性别";
