@@ -207,6 +207,10 @@
                     <navigationItem key="navigationItem" id="hij-Bp-hvI"/>
                     <connections>
                         <outlet property="genderLabel" destination="ZDV-ce-X5W" id="fdM-GY-hcP"/>
+                        <outlet property="genderTitle" destination="4UY-eU-29k" id="Nam-sf-eOZ"/>
+                        <outlet property="interestTitle" destination="nek-gd-AEk" id="rnA-6T-N26"/>
+                        <outlet property="mottoTitle" destination="SWt-Wo-DSr" id="3rw-pA-c5e"/>
+                        <outlet property="skillTitle" destination="wpJ-Qj-lq9" id="kfd-n8-8eK"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8J9-NC-Odn" userLabel="First Responder" sceneMemberID="firstResponder"/>

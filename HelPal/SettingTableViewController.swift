@@ -11,6 +11,10 @@ import UIKit
 class SettingTableViewController: UITableViewController{
     
     @IBOutlet weak var genderLabel: UILabel!
+    @IBOutlet weak var mottoTitle: UILabel!
+    @IBOutlet weak var skillTitle: UILabel!
+    @IBOutlet weak var interestTitle: UILabel!
+    @IBOutlet weak var genderTitle: UILabel!
     
     var genderSheet: UIAlertController!;
     var accountSheet: UIAlertController!;
@@ -19,8 +23,15 @@ class SettingTableViewController: UITableViewController{
         self.title = "SettingNavTitle".localized;
         self.tableView.delegate = self;
         
-        //Do not add any handler to this shared cancelAction
+        //Init view
+        mottoTitle.text = "Motto".localized;
+        skillTitle.text = "Skills".localized;
+        interestTitle.text = "Interests".localized;
+        genderTitle.text = "Gender".localized;
         
+        //Dynamic Part
+        genderLabel.text = "Male".localized;
+        log.info("Dynamic Part not implemented");
         
         //Setting account sheet
         accountSheet = UIAlertController(title: "SureLogout".localized, message: nil, preferredStyle: .actionSheet);

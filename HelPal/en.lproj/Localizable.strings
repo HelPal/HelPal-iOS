@@ -13,6 +13,8 @@
 "Signup" = "Sign up";
 "Logout" = "Log out";
 "Cancel" = "Cancel";
+"Username" = "Username";
+"Password" = "Password";
 
 "ChatlistTabTitle" = "Chats";
 "RecommonTabTitle" = "Discover";
@@ -29,3 +31,8 @@
 
 "SureLogout" = "Are you sure to log out?";
 "ChooseYourGender" = "Choose your gender";
+"Motto" = "Motto";
+"Gender" = "Gender";
+"Interests" = "Interests";
+"Skills" = "Skills";
+

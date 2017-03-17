@@ -37,6 +37,12 @@ class LognSignViewController: UIViewController {
         initInputView(view: passwordView);
         initInputView(view: btnView);
         
+        btnLabel.text = "Login".localized;
+        switchBtn.setTitle("Signup".localized, for: .normal);
+        
+        usernameField.placeholder = "Username".localized;
+        passwordField.placeholder = "Password".localized;
+        
         logoImage.animation = "slideRight";
         logoImage.delay = 0.5;
         logoImage.animate();
