@@ -8,7 +8,6 @@
 //
 
 import UIKit
-import Spring
 
 //This VC shows the log in and the sign up parts
 class LognSignViewController: UIViewController {
