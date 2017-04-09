@@ -26,13 +26,22 @@ final class NetworkManager {
     
     static let sharedInstance: NetworkManager = NetworkManager();
     
-    func loadJson(url: URLConvertible) -> Promise<NSDictionary> {
+    func loadJson(url: URLConvertible, method: HTTPMethod = .get, paras: [String: Any]? = nil, headers: HTTPHeaders? = nil) -> Promise<NSDictionary>{
         return Promise { fulfill, reject in
-            Alamofire.request(url).responseJSON { response in
-                fulfill(response.result.value as! NSDictionary);
+            Alamofire.request(url, method: method, parameters: paras, encoding: URLEncoding.default, headers: headers)
+                .validate()
+                .responseJSON{ response in
+                    switch response.result {
+                    case .success(let dict):
+                        fulfill(dict as! NSDictionary)
+                    case .failure(let error):
+                        reject(error)
+                    }
             }
         }
     }
+    
+
 }
 
 enum NetworkType {
