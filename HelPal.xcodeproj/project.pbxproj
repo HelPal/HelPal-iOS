@@ -11,6 +11,7 @@
 		2E7E1F6E1E3C7EF8009F928F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F6C1E3C7EF8009F928F /* Main.storyboard */; };
 		2E7E1F701E3C7EF8009F928F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F6F1E3C7EF8009F928F /* Assets.xcassets */; };
 		2E7E1F731E3C7EF8009F928F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F711E3C7EF8009F928F /* LaunchScreen.storyboard */; };
+		2E98ED201E9A3BBF0030D4A7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E98ED1F1E9A3BBF0030D4A7 /* NetworkManager.swift */; };
 		2E990F2E1E73FA9D001F4769 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E990F301E73FA9D001F4769 /* Localizable.strings */; };
 		2E990F351E73FAF9001F4769 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E990F341E73FAF9001F4769 /* String.swift */; };
 		2E990F381E740D08001F4769 /* EmptyChatlistContainedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E990F371E740D08001F4769 /* EmptyChatlistContainedController.swift */; };
@@ -65,6 +66,7 @@
 		2E7E1F6F1E3C7EF8009F928F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E7E1F721E3C7EF8009F928F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E7E1F741E3C7EF8009F928F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E98ED1F1E9A3BBF0030D4A7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Core/NetworkManager.swift; sourceTree = "<group>"; };
 		2E990F2B1E73FA6F001F4769 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		2E990F311E73FAA2001F4769 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2E990F321E73FAA3001F4769 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		2E7E1F671E3C7EF7009F928F /* HelPal */ = {
 			isa = PBXGroup;
 			children = (
+				2E98ED1E1E9A3B360030D4A7 /* Core */,
 				2EA386141E752A64006AC16F /* Spring */,
 				2EA386111E75089B006AC16F /* Resources */,
 				2E990F331E73FAC7001F4769 /* Extensions */,
@@ -169,6 +172,14 @@
 				2E7E1F741E3C7EF8009F928F /* Info.plist */,
 			);
 			path = HelPal;
+			sourceTree = "<group>";
+		};
+		2E98ED1E1E9A3B360030D4A7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2E98ED1F1E9A3BBF0030D4A7 /* NetworkManager.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		2E990F331E73FAC7001F4769 /* Extensions */ = {
@@ -356,6 +367,7 @@
 				2EA386451E752A64006AC16F /* Spring.swift in Sources */,
 				2EA386481E752A64006AC16F /* SpringImageView.swift in Sources */,
 				2EA386351E752A64006AC16F /* AutoTextView.swift in Sources */,
+				2E98ED201E9A3BBF0030D4A7 /* NetworkManager.swift in Sources */,
 				2EA386431E752A64006AC16F /* Misc.swift in Sources */,
 				2EA3864B1E752A64006AC16F /* SpringTextView.swift in Sources */,
 				2E990F3A1E742545001F4769 /* MapViewController.swift in Sources */,
