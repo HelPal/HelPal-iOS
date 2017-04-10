@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import Alamofire
 
 final class JsonMocker {
     
@@ -16,7 +17,8 @@ final class JsonMocker {
     //use lazy init for long things
     lazy var mockAPIs: Array<JsonMockModel> = {
         var temp = Array<JsonMockModel>();
-        temp.append(JsonMockModel(route: "v1/user/login", example: [
+        //
+        temp.append(JsonMockModel(route: "/v1/user/login", method: .get, example: [
             "accessToken" : "fakeToken",
             "status" : "true"]));
         return temp;
@@ -26,19 +28,38 @@ final class JsonMocker {
     
     static let sharedInstance: JsonMocker = JsonMocker();
     
-    func mock(path: String!, completeHandler: @escaping (JSON) -> Void) {
+    func mock(url: URLConvertible!, method:HTTPMethod = .get, completeHandler: @escaping (JSON) -> Void) {
+        let urlTransformed = try? url.asURL();
+        if urlTransformed == nil {
+            log.warning("Use wrong para to fetch mock json!");
+            completeHandler(JSON.null);
+            return;
+        }
+        let path = urlTransformed!.path;
+        let results = mockAPIs.filter{
+            $0.route == path &&
+            $0.method == method;
+        };
         let delay = DispatchTime.now() + .milliseconds(JsonMocker.responseDelay)
         DispatchQueue.main.asyncAfter(deadline: delay, execute: { () -> Void in
-            completeHandler(self.mockAPIs[0].example);
+            let random = Int(arc4random_uniform(UInt32(results.count)));
+            if results.count == 0 {
+                log.warning("API not found in the mock list");
+                completeHandler(JSON.null);
+                return;
+            }
+            completeHandler(results[random].example);
         });
     }
 }
 
 class JsonMockModel {
     var route: String!;
+    var method: HTTPMethod!;
     var example: JSON!;
-    init(route: String!, example: JSON!) {
+    init(route: String!, method: HTTPMethod = .get, example: JSON!) {
         self.route = route;
         self.example = example;
+        self.method = method;
     }
 }

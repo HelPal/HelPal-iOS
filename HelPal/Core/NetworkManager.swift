@@ -39,7 +39,7 @@ final class NetworkManager {
         //If in mock mode, returns the saved profile
         if self.networkType == .mock {
             return Promise { fulfill, reject in
-                JsonMocker.sharedInstance.mock(path: url as! String, completeHandler: { json in
+                JsonMocker.sharedInstance.mock(url: url, completeHandler: { json in
                     fulfill(json)
                 })
             }
