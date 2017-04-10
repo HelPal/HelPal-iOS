@@ -20,5 +20,9 @@ class ChatlistViewController: UIViewController
         //TODO: Load measages
         //if messgaes.count = 0
         ListContainer.isHidden = true;
+        
+        NetworkManager.sharedInstance.loadJson(url: "https://www.mapbox.com/ios-sdk/Mapbox-iOS-SDK.json").then{ result in
+            print(result);
+        }
     }
 }

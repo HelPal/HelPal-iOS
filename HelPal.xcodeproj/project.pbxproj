@@ -12,6 +12,7 @@
 		2E7E1F701E3C7EF8009F928F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F6F1E3C7EF8009F928F /* Assets.xcassets */; };
 		2E7E1F731E3C7EF8009F928F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F711E3C7EF8009F928F /* LaunchScreen.storyboard */; };
 		2E98ED201E9A3BBF0030D4A7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E98ED1F1E9A3BBF0030D4A7 /* NetworkManager.swift */; };
+		2E98ED221E9B1E630030D4A7 /* JsonMocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E98ED211E9B1E630030D4A7 /* JsonMocker.swift */; };
 		2E990F2E1E73FA9D001F4769 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E990F301E73FA9D001F4769 /* Localizable.strings */; };
 		2E990F351E73FAF9001F4769 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E990F341E73FAF9001F4769 /* String.swift */; };
 		2E990F381E740D08001F4769 /* EmptyChatlistContainedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E990F371E740D08001F4769 /* EmptyChatlistContainedController.swift */; };
@@ -67,6 +68,7 @@
 		2E7E1F721E3C7EF8009F928F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E7E1F741E3C7EF8009F928F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E98ED1F1E9A3BBF0030D4A7 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkManager.swift; path = Core/NetworkManager.swift; sourceTree = "<group>"; };
+		2E98ED211E9B1E630030D4A7 /* JsonMocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonMocker.swift; sourceTree = "<group>"; };
 		2E990F2B1E73FA6F001F4769 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		2E990F311E73FAA2001F4769 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2E990F321E73FAA3001F4769 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				2E98ED1F1E9A3BBF0030D4A7 /* NetworkManager.swift */,
+				2E98ED211E9B1E630030D4A7 /* JsonMocker.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -354,6 +358,7 @@
 				2EA3863D1E752A64006AC16F /* DesignableView.swift in Sources */,
 				2EA3863B1E752A64006AC16F /* DesignableTextField.swift in Sources */,
 				2EA386411E752A64006AC16F /* LoadingView.swift in Sources */,
+				2E98ED221E9B1E630030D4A7 /* JsonMocker.swift in Sources */,
 				2EC6EABA1E67BD4500AB2F20 /* ChatlistViewController.swift in Sources */,
 				2EA3863A1E752A64006AC16F /* DesignableTabBarController.swift in Sources */,
 				2E990F351E73FAF9001F4769 /* String.swift in Sources */,
