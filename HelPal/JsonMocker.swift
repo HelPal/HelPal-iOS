@@ -46,15 +46,12 @@ final class JsonMocker {
             "avatorUrl": "URL"]));
         //set user info
         temp.append(JsonMockModel(route: "/v1/user/setInfo", method: .post, example: [
-            "avatarUrl" : "URL",
             "status" : 0]));
-        //add 
-        temp.append(JsonMockModel(route: "/v1/user/setInfo", method: .post, example: [
-            "avatarUrl" : "URL",
+        //add and delete skills
+        temp.append(JsonMockModel(route: "/v1/user/editSkill", method: .post, example: [
             "status" : 0]));
-        
-        temp.append(JsonMockModel(route: "/v1/user/setInfo", method: .post, example: [
-            "avatarUrl" : "URL",
+        //add and delete interests
+        temp.append(JsonMockModel(route: "/v1/user/editInterest", method: .post, example: [
             "status" : 0]));
         
         temp.append(JsonMockModel(route: "/v1/user/setInfo", method: .post, example: [
