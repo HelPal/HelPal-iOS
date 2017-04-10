@@ -17,10 +17,54 @@ final class JsonMocker {
     //use lazy init for long things
     lazy var mockAPIs: Array<JsonMockModel> = {
         var temp = Array<JsonMockModel>();
-        //
+        
+        //Sync with https://www.showdoc.cc/home/item/show/item_id/14521
+        //User Life Cycle
+        //log in
         temp.append(JsonMockModel(route: "/v1/user/login", method: .get, example: [
             "accessToken" : "fakeToken",
-            "status" : "true"]));
+            "status" : 0]));
+        //sign up
+        temp.append(JsonMockModel(route: "/v1/user/signup", method: .get, example: [
+            "accessToken" : "fakeToken",
+            "status" : 0]));
+        //set avatar
+        temp.append(JsonMockModel(route: "/v1/user/setAvatar", method: .post, example: [
+            "avatarUrl" : "URL",
+            "status" : 0]));
+        //get user info, request need username as para,
+        //or set username as empty, use accesstoken to get own info
+        temp.append(JsonMockModel(route: "/v1/user/info", method: .get, example: [
+            "status": 0,
+            "username": "Jack",
+            "gender": "male" ,
+            "age": 22,
+            "star_signs": "xx",
+            "skills": ["a","b","c"],
+            "interests": ["l","g"],
+            "motto": "ssss" ,
+            "avatorUrl": "URL"]));
+        //set user info
+        temp.append(JsonMockModel(route: "/v1/user/setInfo", method: .post, example: [
+            "avatarUrl" : "URL",
+            "status" : 0]));
+        //add 
+        temp.append(JsonMockModel(route: "/v1/user/setInfo", method: .post, example: [
+            "avatarUrl" : "URL",
+            "status" : 0]));
+        
+        temp.append(JsonMockModel(route: "/v1/user/setInfo", method: .post, example: [
+            "avatarUrl" : "URL",
+            "status" : 0]));
+        
+        temp.append(JsonMockModel(route: "/v1/user/setInfo", method: .post, example: [
+            "avatarUrl" : "URL",
+            "status" : 0]));
+        
+        temp.append(JsonMockModel(route: "/v1/user/setInfo", method: .post, example: [
+            "avatarUrl" : "URL",
+            "status" : 0]));
+        
         return temp;
     }();
     
