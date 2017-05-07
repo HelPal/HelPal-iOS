@@ -54,14 +54,6 @@ final class JsonMocker {
         temp.append(JsonMockModel(route: "/v1/user/editInterest", method: .post, example: [
             "status" : 0]));
         
-        temp.append(JsonMockModel(route: "/v1/user/setInfo", method: .post, example: [
-            "avatarUrl" : "URL",
-            "status" : 0]));
-        
-        temp.append(JsonMockModel(route: "/v1/user/setInfo", method: .post, example: [
-            "avatarUrl" : "URL",
-            "status" : 0]));
-        
         return temp;
     }();
     

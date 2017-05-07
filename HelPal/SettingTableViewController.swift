@@ -19,6 +19,8 @@ class SettingTableViewController: UITableViewController{
     var genderSheet: UIAlertController!;
     var accountSheet: UIAlertController!;
     
+    var isLoggedIn: Bool = false;
+    
     override func viewDidLoad() {
         self.title = "SettingNavTitle".localized;
         self.tableView.delegate = self;
@@ -58,6 +60,17 @@ class SettingTableViewController: UITableViewController{
         genderSheet.addAction(femaleAction);
         genderSheet.addAction(cancelActionForGender);
         
+        //TODO: Check whether is logged in
+        //if yes
+        //isLoggedIn = true;
+        if isLoggedIn == false {
+            pushUpLoginView();
+        }
+    }
+    
+    func pushUpLoginView() {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "lognSignNav");
+        self.present(vc!, animated: true, completion: nil);
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
