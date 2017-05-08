@@ -21,8 +21,11 @@ class ChatlistViewController: UIViewController
         //if messgaes.count = 0
         ListContainer.isHidden = true;
         
-        UserLifeCycle.signup(username: "zhongdian", rawPwd: "19941201", completeHandler: {(suc, error) -> Void in
-            print(error);
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //Now Use as Unit Test
+        UserLifeCycle.login(username: "zhongdian", rawPwd: "19941201", completeHandler: {(suc, error) -> Void in
         })
     }
 }

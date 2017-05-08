@@ -105,11 +105,13 @@ class SettingTableViewController: UITableViewController{
     func setGender(type: String!){
         if type == "male" {
             UserLifeCycle.setGender(isMale: true, completeHandler: { (suc, error) -> Void in
-                print(error)});
+                if suc == false {
+                    print(error!)}});
             genderLabel.text = "Male".localized;
         } else if type == "female" {
             UserLifeCycle.setGender(isMale: false,completeHandler: { (suc, error) -> Void in
-                print(error)});
+                if suc == false {
+                    print(error!)}});
             genderLabel.text = "Female".localized;
         }
     }

@@ -31,5 +31,6 @@ final class CacheManager {
 }
 
 enum CacheKeys: String {
+    case accessToken = "accessToken";
     case settingGender = "settingGender";
 }
