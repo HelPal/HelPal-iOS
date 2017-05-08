@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E61C7FA1EC0629900699489 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61C7F91EC0629900699489 /* CacheManager.swift */; };
 		2E7E1F691E3C7EF8009F928F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E1F681E3C7EF8009F928F /* AppDelegate.swift */; };
 		2E7E1F6E1E3C7EF8009F928F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F6C1E3C7EF8009F928F /* Main.storyboard */; };
 		2E7E1F701E3C7EF8009F928F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F6F1E3C7EF8009F928F /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E61C7F91EC0629900699489 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CacheManager.swift; path = Core/CacheManager.swift; sourceTree = "<group>"; };
 		2E7E1F651E3C7EF7009F928F /* HelPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7E1F681E3C7EF8009F928F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E7E1F6D1E3C7EF8009F928F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 			children = (
 				2E98ED1F1E9A3BBF0030D4A7 /* NetworkManager.swift */,
 				2E98ED211E9B1E630030D4A7 /* JsonMocker.swift */,
+				2E61C7F91EC0629900699489 /* CacheManager.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				2E98ED201E9A3BBF0030D4A7 /* NetworkManager.swift in Sources */,
 				2EA386431E752A64006AC16F /* Misc.swift in Sources */,
 				2EA3864B1E752A64006AC16F /* SpringTextView.swift in Sources */,
+				2E61C7FA1EC0629900699489 /* CacheManager.swift in Sources */,
 				2E990F3A1E742545001F4769 /* MapViewController.swift in Sources */,
 				2EEF0BB21E67DF8600539627 /* ChatlistNavController.swift in Sources */,
 				2E990F3C1E74256B001F4769 /* RecommonListViewController.swift in Sources */,
