@@ -18,17 +18,17 @@ class EmptyChatlistContainedController: UIViewController {
     var tapper2: UITapGestureRecognizer!;
     
     override func viewDidLoad() {
-        //TODO: Check whether is logged in
-        //if yes
-        //isLoggedIn = true;
-        //message.text = "EmptyChatlistMessage_NoMessage".localized;
-        //if not
-        message.text = "EmptyChatlistMessage_NotLoggin".localized;
+        //Check whether is logged in
+        isLoggedIn = UserLifeCycle.isLoggedIn();
+        if isLoggedIn {
+            message.text = "EmptyChatlistMessage_NoMessage".localized;}
+        else{
+            message.text = "EmptyChatlistMessage_NotLoggin".localized;}
         
         //A UIGestureRecognizer is to be used with a single view. That UIGestureRecognizer has a single view property gives it away.
         tapper1 = UITapGestureRecognizer(target: self, action: #selector(pushUpLoginView));
         tapper2 = UITapGestureRecognizer(target: self, action: #selector(pushUpLoginView));
-        isLoggedIn = UserLifeCycle.isLoggedIn();
+        
         if isLoggedIn == false {
             image404.isUserInteractionEnabled = true;
             message.isUserInteractionEnabled = true;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 //When the user is not logged in, this VC shows a message. Tab on anywhere will lead to the login ViewController
 //When the user is logged in, this VC shows a chatlist
@@ -25,7 +26,8 @@ class ChatlistViewController: UIViewController
     
     override func viewWillAppear(_ animated: Bool) {
         //Now Use as Unit Test
-        UserLifeCycle.login(username: "zhongdian", rawPwd: "19941201", completeHandler: {(suc, error) -> Void in
+        UserLifeCycle.getMyUserInfo( completeHandler: {(suc, error, json) -> Void in
         })
+        
     }
 }

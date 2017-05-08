@@ -28,9 +28,14 @@ final class CacheManager {
     func getCache(key: CacheKeys) -> String?{
         return defaults.string(forKey: key.rawValue);
     }
+    
+    func clearCache(key: CacheKeys){
+        defaults.removeObject(forKey: key.rawValue);
+    }
 }
 
 enum CacheKeys: String {
     case accessToken = "accessToken";
+    case username = "username";
     case settingGender = "settingGender";
 }

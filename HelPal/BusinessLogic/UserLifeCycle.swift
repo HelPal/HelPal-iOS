@@ -24,6 +24,7 @@ class UserLifeCycle {
         
         NetworkManager.sharedInstance.loadJson(url: url).then{ result -> Void in
             if result["accessToken"].string != nil {
+                CacheManager.sharedInstance.setCache(key: .username, value: username);
                 CacheManager.sharedInstance.setCache(key: .accessToken, value: result["accessToken"].string!);
                 completeHandler(true, nil);
             } else {
@@ -40,6 +41,7 @@ class UserLifeCycle {
         
         NetworkManager.sharedInstance.loadJson(url: url, method: .post).then{ result -> Void in
             if result["accessToken"].string != nil {
+                CacheManager.sharedInstance.setCache(key: .username, value: username);
                 CacheManager.sharedInstance.setCache(key: .accessToken, value: result["accessToken"].string!);
                 completeHandler(true, nil);
             } else {
@@ -47,6 +49,42 @@ class UserLifeCycle {
             }
             }.catch{error -> Void in
                 completeHandler(false, error.localizedDescription);
+        }
+    }
+    
+    static func getUserInfo(username: String, completeHandler:@escaping (Bool, String?, JSON?) -> (Void) ){
+        
+        let url = NetworkManager.domain + "/user/info?username=" + username;
+        
+        NetworkManager.sharedInstance.loadJson(url: url, method: .get).then{ result -> Void in
+            if result["Status"].number == 0 {
+                completeHandler(true, nil, result["User"]);
+            } else {
+                completeHandler(false, result["errorMsg"].string!, nil);
+            }
+            }.catch{error -> Void in
+                completeHandler(false, error.localizedDescription, nil);
+        }
+    }
+    
+    //TODO:
+    //backend need to update
+    static func getMyUserInfo(completeHandler:@escaping (Bool, String?, JSON?) -> (Void) ){
+        
+        guard let token = CacheManager.sharedInstance.getCache(key: .accessToken) else {
+            completeHandler(false, "not logged in", nil);
+            return;
+        }
+        let url = NetworkManager.domain + "/user/info?accessToken=" + token;
+        
+        NetworkManager.sharedInstance.loadJson(url: url, method: .get).then{ result -> Void in
+            if result["Status"].number == 0 {
+                completeHandler(true, nil, result["User"]);
+            } else {
+                completeHandler(false, result["errorMsg"].string!, nil);
+            }
+            }.catch{error -> Void in
+                completeHandler(false, error.localizedDescription, nil);
         }
     }
     
@@ -73,5 +111,11 @@ class UserLifeCycle {
         }.catch{error -> Void in
             completeHandler(false, error.localizedDescription);
         }
+    }
+    
+    static func logout(){
+        CacheManager.sharedInstance.clearCache(key: .accessToken);
+        CacheManager.sharedInstance.clearCache(key: .username);
+        CacheManager.sharedInstance.clearCache(key: .settingGender);
     }
 }
