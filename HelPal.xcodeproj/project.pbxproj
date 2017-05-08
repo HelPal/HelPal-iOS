@@ -10,6 +10,8 @@
 		2E61C7FA1EC0629900699489 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61C7F91EC0629900699489 /* CacheManager.swift */; };
 		2E61C7FD1EC06A7300699489 /* UserLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61C7FC1EC06A7300699489 /* UserLifeCycle.swift */; };
 		2E61C7FF1EC0988900699489 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61C7FE1EC0988900699489 /* Support.swift */; };
+		2E61C8061EC0CEC300699489 /* Workflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61C8051EC0CEC300699489 /* Workflow.swift */; };
+		2E61C8081EC0D36C00699489 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E61C8071EC0D36C00699489 /* SearchTableViewController.swift */; };
 		2E7E1F691E3C7EF8009F928F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E1F681E3C7EF8009F928F /* AppDelegate.swift */; };
 		2E7E1F6E1E3C7EF8009F928F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F6C1E3C7EF8009F928F /* Main.storyboard */; };
 		2E7E1F701E3C7EF8009F928F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E1F6F1E3C7EF8009F928F /* Assets.xcassets */; };
@@ -68,6 +70,8 @@
 		2E61C7FC1EC06A7300699489 /* UserLifeCycle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserLifeCycle.swift; path = BusinessLogic/UserLifeCycle.swift; sourceTree = "<group>"; };
 		2E61C7FE1EC0988900699489 /* Support.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Support.swift; path = Core/Support.swift; sourceTree = "<group>"; };
 		2E61C8011EC09AC900699489 /* HelPal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelPal-Bridging-Header.h"; sourceTree = "<group>"; };
+		2E61C8051EC0CEC300699489 /* Workflow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Workflow.swift; path = BusinessLogic/Workflow.swift; sourceTree = "<group>"; };
+		2E61C8071EC0D36C00699489 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		2E7E1F651E3C7EF7009F928F /* HelPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7E1F681E3C7EF8009F928F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E7E1F6D1E3C7EF8009F928F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				2E61C7FC1EC06A7300699489 /* UserLifeCycle.swift */,
+				2E61C8051EC0CEC300699489 /* Workflow.swift */,
 			);
 			name = BusinessLogic;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 				2E990F3B1E74256B001F4769 /* RecommonListViewController.swift */,
 				2EEF0BB51E67DFBE00539627 /* SettingNavController.swift */,
 				2EC6EABD1E67BF2200AB2F20 /* SettingTableViewController.swift */,
+				2E61C8071EC0D36C00699489 /* SearchTableViewController.swift */,
 				2E990F301E73FA9D001F4769 /* Localizable.strings */,
 				2E7E1F6C1E3C7EF8009F928F /* Main.storyboard */,
 				2E7E1F711E3C7EF8009F928F /* LaunchScreen.storyboard */,
@@ -376,6 +382,7 @@
 				2EEF0BB61E67DFBE00539627 /* SettingNavController.swift in Sources */,
 				2EA386461E752A64006AC16F /* SpringAnimation.swift in Sources */,
 				2EA3863D1E752A64006AC16F /* DesignableView.swift in Sources */,
+				2E61C8081EC0D36C00699489 /* SearchTableViewController.swift in Sources */,
 				2EA3863B1E752A64006AC16F /* DesignableTextField.swift in Sources */,
 				2EA386411E752A64006AC16F /* LoadingView.swift in Sources */,
 				2E61C7FF1EC0988900699489 /* Support.swift in Sources */,
@@ -390,6 +397,7 @@
 				2EA3863C1E752A64006AC16F /* DesignableTextView.swift in Sources */,
 				2E7E1F691E3C7EF8009F928F /* AppDelegate.swift in Sources */,
 				2EA3863E1E752A64006AC16F /* ImageLoader.swift in Sources */,
+				2E61C8061EC0CEC300699489 /* Workflow.swift in Sources */,
 				2EC6EAC01E67C49300AB2F20 /* LognSignViewController.swift in Sources */,
 				2EA386401E752A64006AC16F /* KeyboardLayoutConstraint.swift in Sources */,
 				2EA386451E752A64006AC16F /* Spring.swift in Sources */,

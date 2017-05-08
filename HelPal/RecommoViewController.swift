@@ -29,6 +29,8 @@ class RecommonViewController: UIViewController{
         self.navigationItem.titleView = segment;
         //Swift 3 has changed the way to write addTarget Method
         segment.addTarget(self, action: #selector(segmentChanged(sender:)), for: .valueChanged);
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(tapSearchBtn));
     }
     
     func segmentChanged(sender: UISegmentedControl){
@@ -39,6 +41,11 @@ class RecommonViewController: UIViewController{
             listContainer.isHidden = false;
             mapContainer.isHidden = true;
         }
+    }
+    
+    func tapSearchBtn(){
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "searchNav");
+        self.present(vc!, animated: true, completion: nil);
     }
     
 }
