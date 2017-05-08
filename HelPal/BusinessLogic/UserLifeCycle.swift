@@ -113,6 +113,32 @@ class UserLifeCycle {
         }
     }
     
+    static func editSkill(isAdd: Bool, skill: String!, completeHandler:@escaping (Bool, String?) -> (Void)){
+        guard let token = CacheManager.sharedInstance.getCache(key: .accessToken) else {
+            completeHandler(false, "not logged in");
+            return;
+        }
+        let url = NetworkManager.domain + "/user/editSkill?accessToken=" + token + "&isAdd=" + String(isAdd) + "&skill="+skill;
+        NetworkManager.sharedInstance.loadJson(url: url, method: .post).then{ result -> Void in
+                print(result);
+            }.catch{error -> Void in
+                completeHandler(false, error.localizedDescription);
+        }
+    }
+    
+    static func editInterest(isAdd: Bool, interest: String!, completeHandler:@escaping (Bool, String?) -> (Void)){
+        guard let token = CacheManager.sharedInstance.getCache(key: .accessToken) else {
+            completeHandler(false, "not logged in");
+            return;
+        }
+        let url = NetworkManager.domain + "/user/editInterest?accessToken=" + token + "&isAdd=" + String(isAdd) + "&interest="+interest;
+        NetworkManager.sharedInstance.loadJson(url: url, method: .post).then{ result -> Void in
+            print(result);
+            }.catch{error -> Void in
+                completeHandler(false, error.localizedDescription);
+        }
+    }
+    
     static func logout(){
         CacheManager.sharedInstance.clearCache(key: .accessToken);
         CacheManager.sharedInstance.clearCache(key: .username);
