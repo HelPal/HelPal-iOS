@@ -11,7 +11,7 @@ import XCGLogger
 
 let log = XCGLogger.default;
 
-let UniversalNetworkingMode = "mock"; //"product", "mock", "compare"
+let UniversalNetworkingMode = "product"; //"product", "mock", "compare"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

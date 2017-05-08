@@ -32,8 +32,18 @@ class SettingTableViewController: UITableViewController{
         genderTitle.text = "Gender".localized;
         
         //Dynamic Part
-        genderLabel.text = "Male".localized;
-        log.info("Dynamic Part not implemented");
+        //First, read cache and fill this...
+        let gender = CacheManager.sharedInstance.getCache(key: .settingGender);
+        if gender != nil {
+            //gender should be "Male" or "Female"
+            genderLabel.text = gender!.localized;
+        } else {
+            genderLabel.text = "NotGiven".localized;
+        }
+
+        //Second, fetch data from the server
+        //Use a delegate to do this, do not perform such work in ViewController
+        log.info("No interaction with server");
         
         //Setting account sheet
         accountSheet = UIAlertController(title: "SureLogout".localized, message: nil, preferredStyle: .actionSheet);
@@ -93,11 +103,13 @@ class SettingTableViewController: UITableViewController{
     }
     
     func setGender(type: String!){
-        //TODO:
-        log.info("set gender request not implemented");
         if type == "male" {
+            UserLifeCycle.setGender(isMale: true, completeHandler: { (suc, error) -> Void in
+                print(error)});
             genderLabel.text = "Male".localized;
         } else if type == "female" {
+            UserLifeCycle.setGender(isMale: false,completeHandler: { (suc, error) -> Void in
+                print(error)});
             genderLabel.text = "Female".localized;
         }
     }

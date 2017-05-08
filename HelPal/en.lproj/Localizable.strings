@@ -8,6 +8,7 @@
 
 "Male" = "Male";
 "Female" = "Female";
+"NotGiven" = "Unknown";
 
 "Login" = "Log in";
 "Signup" = "Sign up";

@@ -21,8 +21,8 @@ class ChatlistViewController: UIViewController
         //if messgaes.count = 0
         ListContainer.isHidden = true;
         
-        NetworkManager.sharedInstance.loadJson(url: "https://8.8.8.8/v1/user/login").then{ result in
-            print(result);
-        }
+        UserLifeCycle.signup(username: "zhongdian", rawPwd: "19941201", completeHandler: {(suc, error) -> Void in
+            print(error);
+        })
     }
 }

@@ -34,6 +34,9 @@ final class NetworkManager {
     
     static let sharedInstance: NetworkManager = NetworkManager();
     
+    /// Server protocol, IP and port, and version
+    static let domain: String! = "http://112.74.53.157:8080/Helpal";
+    
     func loadJson(url: URLConvertible, method: HTTPMethod = .get, paras: [String: Any]? = nil, headers: HTTPHeaders? = nil) -> Promise<JSON>{
         
         //If in mock mode, returns the saved profile

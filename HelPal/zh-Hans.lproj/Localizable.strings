@@ -8,6 +8,7 @@
 
 "Male" = "男";
 "Female" = "女";
+"NotGiven" = "未知";
 
 "Login" = "登录";
 "Signup" = "注册";
