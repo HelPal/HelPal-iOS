@@ -70,9 +70,8 @@ class SettingTableViewController: UITableViewController{
         genderSheet.addAction(femaleAction);
         genderSheet.addAction(cancelActionForGender);
         
-        //TODO: Check whether is logged in
-        //if yes
-        //isLoggedIn = true;
+        //Check whether is logged in
+        isLoggedIn = UserLifeCycle.isLoggedIn()
         if isLoggedIn == false {
             pushUpLoginView();
         }

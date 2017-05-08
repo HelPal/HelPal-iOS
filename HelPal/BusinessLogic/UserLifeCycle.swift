@@ -12,6 +12,12 @@ import SwiftyJSON
 
 class UserLifeCycle {
     
+    static func isLoggedIn() -> Bool{
+        //TODO:
+        //check the token online
+        return CacheManager.sharedInstance.getCache(key: .accessToken) != nil;
+    }
+    
     static func login(username: String, rawPwd: String, completeHandler:@escaping (Bool, String?) -> (Void) ){
         
         let url = NetworkManager.domain + "/user/login?username=" + username + "&password=" + Support.md5(rawPwd);
