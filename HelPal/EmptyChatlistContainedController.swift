@@ -37,7 +37,7 @@ class EmptyChatlistContainedController: UIViewController {
         }
     }
     
-    func pushUpLoginView() {
+    @objc func pushUpLoginView() {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "lognSignNav");
         self.present(vc!, animated: true, completion: nil);
     }

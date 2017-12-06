@@ -74,11 +74,11 @@ class LognSignViewController: UIViewController {
     }
 
     //TODO: test whether this is avaiable when next VC traggles this.
-    func dismissLognSignVC(){
+    @objc func dismissLognSignVC(){
         self.dismiss(animated: true, completion: nil);
     }
     
-    func tapBtn(){
+    @objc func tapBtn(){
         if isLogIn == true{
             login();
         } else {

@@ -52,7 +52,7 @@ class SearchTableViewController: UITableViewController, UISearchBarDelegate {
         return cell
     }
     
-    func tapOn(tap: UITapGestureRecognizer){
+    @objc func tapOn(tap: UITapGestureRecognizer){
         let location = tap.location(in: self.tableView);
         let path = self.tableView.indexPathForRow(at: location);
         if path == nil {

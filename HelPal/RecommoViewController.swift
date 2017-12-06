@@ -33,7 +33,7 @@ class RecommonViewController: UIViewController{
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(tapSearchBtn));
     }
     
-    func segmentChanged(sender: UISegmentedControl){
+    @objc func segmentChanged(sender: UISegmentedControl){
         if(sender.selectedSegmentIndex == 1){
             listContainer.isHidden = true;
             mapContainer.isHidden = false;
@@ -43,7 +43,7 @@ class RecommonViewController: UIViewController{
         }
     }
     
-    func tapSearchBtn(){
+    @objc func tapSearchBtn(){
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "searchNav");
         self.present(vc!, animated: true, completion: nil);
     }
