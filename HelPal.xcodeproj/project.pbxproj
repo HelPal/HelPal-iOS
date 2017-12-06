@@ -62,7 +62,6 @@
 		2EEF0BB21E67DF8600539627 /* ChatlistNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF0BB11E67DF8600539627 /* ChatlistNavController.swift */; };
 		2EEF0BB41E67DFA600539627 /* RecommonNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF0BB31E67DFA600539627 /* RecommonNavController.swift */; };
 		2EEF0BB61E67DFBE00539627 /* SettingNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEF0BB51E67DFBE00539627 /* SettingNavController.swift */; };
-		2EEF0BBA1E6843BA00539627 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEF0BB91E6843BA00539627 /* OHHTTPStubs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,10 +123,10 @@
 		2EC6EABB1E67BE9700AB2F20 /* RecommoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommoViewController.swift; sourceTree = "<group>"; };
 		2EC6EABD1E67BF2200AB2F20 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		2EC6EABF1E67C49300AB2F20 /* LognSignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LognSignViewController.swift; sourceTree = "<group>"; };
+		2ED220AC1FD7AD8600A722E1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2EEF0BB11E67DF8600539627 /* ChatlistNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatlistNavController.swift; sourceTree = "<group>"; };
 		2EEF0BB31E67DFA600539627 /* RecommonNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommonNavController.swift; sourceTree = "<group>"; };
 		2EEF0BB51E67DFBE00539627 /* SettingNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingNavController.swift; sourceTree = "<group>"; };
-		2EEF0BB91E6843BA00539627 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +134,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EEF0BBA1E6843BA00539627 /* OHHTTPStubs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +152,7 @@
 		2E7E1F5C1E3C7EF7009F928F = {
 			isa = PBXGroup;
 			children = (
+				2ED220AC1FD7AD8600A722E1 /* README.md */,
 				2E7E1F671E3C7EF7009F928F /* HelPal */,
 				2E7E1F661E3C7EF7009F928F /* Products */,
 				2EEF0BB81E6843BA00539627 /* Frameworks */,
@@ -267,7 +266,6 @@
 		2EEF0BB81E6843BA00539627 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2EEF0BB91E6843BA00539627 /* OHHTTPStubs.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -354,7 +352,6 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Mapbox.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",

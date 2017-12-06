@@ -9,7 +9,6 @@
 import Foundation
 import Alamofire
 import PromiseKit
-import OHHTTPStubs
 import SwiftyJSON
 
 enum NetworkType {
