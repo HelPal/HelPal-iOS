@@ -10,6 +10,22 @@ import Foundation
 import PromiseKit
 import SwiftyJSON
 
+/*
+ * Apple recommends developers to use MVC in iOS apps, which is Model, View, ViewController.
+ * But after doing some work you will notice ViewController can be extra heavy in a complex app.
+ * So I learned something from so-called Three-tier Architecture, which is Presentation, Business Logic and Data
+ * Views and ViewControllers will do the presentation
+ * NetworkManager and CacheManager get data from server and local
+ * And here is the Business Logic, actually when you use a verb to describe what the app really doing, you can find that verb here.
+ * This Architecture is well designed, but the implemation has a problem.
+ * ViewController want something to be done by Bussiness Logic. Usually these tasks take a while to finish. So the ViewController will continue running before Bussiness Logic function actually returns. This is want we called async.
+ * To achieve that we will need get a callback function as a parameter to Bussiness Logic function. When the later function truly finished, it calls the callback.
+ * This is simple and elegant, but not in a complex app. Say if View Controller want to perform task A and task B, how to determine whether they've all done?
+ * Complex situations like this will lead you to a place called Callback hell.
+ * To solve this, I introduced Promise in NetworkManager. You can read document about Promise in JavaScript and PromiseKit.
+ * Problem is I just introduce Promise in Data Level, which is NetworkManager here. You may need to re-structure every BusinessLogic method to pass Promise<T> to View Controller.
+ * Or you can take a step further, using RxSwift, it's a brand new way to program. Check some documents about it and MVVM.
+ */
 class UserLifeCycle {
     
     static func isLoggedIn() -> Bool{

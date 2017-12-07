@@ -17,6 +17,9 @@ enum NetworkType {
     case compare;
 }
 
+/*
+ * Here we use a singleton to manage every network. This is simple and enough.
+ */
 final class NetworkManager {
     
     var networkType: NetworkType!;
@@ -47,7 +50,9 @@ final class NetworkManager {
             }
         }
         //Note that in compare mode, we need to fetch data from server as well as mock it locally,
+        //So that we can exam whether they did backend as we expected
         //which means it shares same lines of codes below and above, but I haven't found a good idea to do componentization
+        //TODO: else if self.networkType == .compare
             
         //In most case, we return the server's reponse.
         else {

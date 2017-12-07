@@ -10,6 +10,10 @@ import Foundation
 import SwiftyJSON
 import Alamofire
 
+/**
+ * Since the backend API will always behind your developing plan, you would like to generate fake API response so that you can continue testing and developing.
+ * In the AppDelegate you can set the mode, determining whether to mock or not. You can also move the mode setting from AppDelegate to info.plist.
+ */
 final class JsonMocker {
     
     static let responseDelay = 3000;

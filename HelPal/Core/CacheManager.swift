@@ -8,6 +8,14 @@
 
 import Foundation
 
+/*
+ * In a mobile app we always need to persist the data, otherwise all the data we need will be lost next time user launches his or her app
+ * There are many ways to do persisting. Most easy one are implemented here. We only stored the key-value pair.
+ * But as the app grows complex, you may need to use a database to store data and query it.
+ * You can use Sqlite to do this. We have FMDB and other frameworks helping us maintain a Sqlite database in app.
+ * However, in a real complex app, Sqlite will be another shit you don't want to step on. In this case you may need Realm or other REAL database frameworks.
+ * And always, don't use CoreData.
+ */
 final class CacheManager {
     
     private let defaults : UserDefaults!;
